@@ -17,7 +17,7 @@
     <title>NuCamp: A Better Way To Camp</title>
 </head>
 
-<body>
+<body class="bg-custom">
 
     <header class="jumbotron jumbotron-fluid parallax">
         <div class="container">
@@ -35,43 +35,57 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
                 <img src="img/logo.png" height="30" width="30" />
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
-                <ul class="navbar-nav"> 
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i>About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>Sites</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
-                </ul>
-            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+            <ul class="navbar-nav"> 
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i>About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>Sites</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
+            </ul>
+                <span class="nav-item ml-auto">
+                    <form class="form-inline">
+                        <input type="text" class="form-control" id="inlineFormSearch" style="width: 17rem" placeholder="Where do you want to explore?" />
+                        <button type="submit" class="btn btn-success">Search</button> 
+                    </form>
+                </span>
+            <span class="navbar-text ml-auto">
+                <a role="button" id="loginButton">
+                    <i class="fa fa-sign-in"></i> Login
+                </a>
+            </span>
+        </div>
         </div>
     </nav>
-            
+
+<!--breadcrumb-->
     <div class="container">
         <div class="row">
             <div class="col">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb bg-success text-white">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item active">About Us</li>
+                    <li class="breadcrumb-item"><a href="#">Sites</a></li>
+                    <li class="breadcrumb-item"><a href="contactus.html">Contact</a></li>
                 </ol>
                <h2>About Us</h2>
                <hr />
             </div>
         </div>
 
-        <div class="row row-content">
+        <div class="row row-content bg-beige m-2 p-3 border border-dark">
             <div class="col-sm-6">
                 <h3>Our Mission</h3>
                 <p>We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe and respectful use of resources. The expert wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. We also present a platform for campers to share reviews on campsites they have visited with each other.</p>
             </div>
             <div class="col-sm-6">
                 <div class="card">
-                    <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                    <h3 class="card-header bg-success text-white">Facts At a Glance</h3>
                     <div class="card-body">
                         <dl class="row">
                             <dt class="col-6">Founded</dt>
@@ -98,7 +112,7 @@
             </div>
         </div>
 
-        <div class="row row-content">
+        <div class="row row-content bg-beige m-2 p-3 border border-dark">
             <div class="col">
                 <h3>Community Partners</h3>
                 <div id="accordion">
@@ -160,7 +174,7 @@
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
-                            <tr class="bg-primary text-light">
+                            <tr class="bg-success text-light">
                                 <th></th>
                                 <th>2016</th>
                                 <th>2017</th>
